@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skintuity — Privacy Policy</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; background: #F0F0EA; color: #1d2b22; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  .updated { color: #5c6b60; font-size: .9rem; margin-bottom: 32px; }
+  h2 { font-size: 1.25rem; margin-top: 36px; border-bottom: 1px solid #d8ded9; padding-bottom: 6px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .card { background: #FAFAF6; border: 1px solid #d8ded9; border-radius: 14px; padding: 16px 18px; margin: 18px 0; }
+  a { color: #3B6D50; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Skintuity Privacy Policy</h1>
+  <p class="updated">Effective date: October 17, 2026</p>
+
+  <p>Skintuity is a personal skin-health journal: you photograph your skin, answer short daily
+  questions, and record the products you use, and the app shows you how your skin's appearance
+  tracked against what you did. This policy explains what data Skintuity handles, where it goes,
+  and the choices you have. We have tried to write it the way we would want to read it.</p>
+
+  <div class="card"><strong>The short version.</strong> Your data exists to show <em>you</em> your
+  own patterns. We don't run ads, we don't sell or share your data for marketing, and we don't
+  track you across other apps or websites. Photos are analyzed by an AI provider only with your
+  explicit, revocable permission. You can delete your account and everything in it, yourself, at
+  any time.</div>
+
+  <h2>What we collect</h2>
+  <ul>
+    <li><strong>Account:</strong> your email address and a password (stored as a secure hash).</li>
+    <li><strong>Skin photos</strong> you choose to take or upload, and the AI-generated appearance
+    scores and descriptions attached to them.</li>
+    <li><strong>Journal entries:</strong> the daily details you log, such as mood, itch, stress,
+    sleep, activity, foods, suspected triggers, medications you record, and optional notes and
+    reflections.</li>
+    <li><strong>Products and sensitivities:</strong> products you add, ingredient lists read from
+    label photos, and the personal allergen list you maintain.</li>
+    <li><strong>Light-therapy sessions</strong> you log.</li>
+    <li><strong>Subscription status</strong> (whether your account has an active Skintuity Pro
+    subscription). Payment itself is handled by Apple — we never see your card details.</li>
+    <li><strong>Service counters</strong> such as how many AI analyses your account ran recently,
+    used for fair-use limits; these are automatically deleted within days.</li>
+  </ul>
+  <p><strong>Weather correlation (optional):</strong> if you turn it on, the app uses your device
+  location in the moment to fetch local weather and pollen conditions and stores those
+  <em>conditions</em> alongside your journal entry. Your location itself is never stored.</p>
+
+  <h2>A request about photos</h2>
+  <div class="card"><strong>Please do not photograph intimate areas.</strong> Skintuity is designed
+  for tracking visible skin — face, arms, hands, legs, torso and similar. Images of intimate or
+  genital areas are not needed for anything the app does, and we ask that you never submit them.
+  If skin in those areas concerns you, please see a clinician directly.</div>
+
+  <h2>Where your data goes</h2>
+  <p>Skintuity is built on a small number of service providers, each doing one job:</p>
+  <ul>
+    <li><strong>Supabase</strong> hosts our database, photo storage, and sign-in system. Your rows
+    are isolated per account at the database level, and photos live in private storage reachable
+    only through short-lived links.</li>
+    <li><strong>OpenAI</strong> receives your skin photo when you run an analysis, and journal-derived
+    text when you run Insights, and returns the descriptions you see. This happens <em>only after
+    you give explicit consent</em> in the app, which you can withdraw at any time in Settings.
+    Under our API terms with OpenAI, your content is not used to train their models.</li>
+    <li><strong>RevenueCat</strong> processes subscription events from Apple so your Pro status
+    survives reinstalls and new phones. It sees your account identifier and purchase history, not
+    your health content.</li>
+    <li><strong>Apple</strong> handles App Store distribution and all payment, as it does for every
+    iOS app.</li>
+  </ul>
+  <p>That's the complete list. No analytics brokers, no advertising networks, no data sales, and no
+  cross-app or cross-site tracking of any kind.</p>
+
+  <h2>What we never do</h2>
+  <ul>
+    <li>We never sell your data or share it for advertising.</li>
+    <li>We never use your photos or journal to train AI models.</li>
+    <li>We never show your data to other users — there is no feed, no sharing, no social layer.</li>
+    <li>We never diagnose. Skintuity describes appearance and patterns in your own logged data; it
+    is a general-wellness journal, not a medical device, and it is no substitute for a clinician.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Skintuity offers a mode for a parent or guardian to track a child's skin from the
+  <em>adult's own account</em>. Accounts themselves are for adults; we do not knowingly let
+  children open accounts or submit their own data. AI photo analysis in child-tracking mode is
+  subject to the same explicit consent, given by the responsible adult.</p>
+
+  <h2>Retention and deletion</h2>
+  <ul>
+    <li>Your content stays in your account for as long as you keep the account — the entire point
+    of Skintuity is the longitudinal record.</li>
+    <li><strong>Delete Account</strong> (in Settings) permanently removes your journal, photos,
+    products, analyses, reflections, and the account itself. This is immediate and cannot be
+    undone by us.</li>
+    <li>Records of subscription billing events are retained after account deletion, as required
+    for financial bookkeeping and dispute handling. They contain no health content.</li>
+    <li>PDF reports you export are files on your device, under your control.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>All data moves over encrypted connections. Database access is enforced per-account at the
+  database engine itself (row-level security), photos are stored privately with expiring access
+  links, and AI requests are authenticated and rate-limited server-side. No system is perfectly
+  secure, but the architecture is built so that even our own application code cannot read one
+  user's data on behalf of another.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Use the core journal without ever enabling AI photo analysis.</li>
+    <li>Withdraw AI consent at any time (Settings → Privacy) — analysis stops until you re-enable it.</li>
+    <li>Leave weather correlation off; location is then never used.</li>
+    <li>Export your record as a PDF whenever you want it.</li>
+    <li>Delete your account, in the app, without asking us.</li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy in a way that matters, we will update this page and its effective
+  date, and for significant changes we will tell you in the app before they take effect.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, concerns, or data requests: <a href="mailto:stephaniehinton19@gmail.com">stephaniehinton19@gmail.com</a>.</p>
+</main>
+</body>
+</html>
